@@ -17,20 +17,20 @@
 
         let computerMove = '';
         if(randomNumber >= 0 && randomNumber < 1/3){
-            computerMove = 'Rock';
+            computerMove = 'rock';
         } else if(randomNumber < 2/3){
-            computerMove = 'Paper';
+            computerMove = 'paper';
         } else {
-            computerMove = 'Scissors';
+            computerMove = 'scissors';
         }
 
         let result = '';
         if(userMove === computerMove){
             result = 'It is a tie!';
         } else if(
-            (userMove === 'Rock' && computerMove === 'Scissors') ||
-            (userMove === 'Paper' && computerMove === 'Rock') ||
-            (userMove === 'Scissors' && computerMove === 'Paper')
+            (userMove === 'rock' && computerMove === 'scissors') ||
+            (userMove === 'paper' && computerMove === 'rock') ||
+            (userMove === 'scissors' && computerMove === 'paper')
         ){
             result = 'You win!';
         } else {
