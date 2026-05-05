@@ -47,7 +47,7 @@
         
         document.querySelector('.js-result').innerHTML = result;
 
-        document.querySelector('.js-moves').innerHTML = ` You <img src="Rock Paper Scissors_files/${userMove}-emoji.png" alt="Rock" class="move-icon"> and computer <img src="Rock Paper Scissors_files/${computerMove}-emoji.png" alt="Paper" class="move-icon">`;
+        document.querySelector('.js-moves').innerHTML = ` You <img src="${userMove}-emoji.png" alt="Rock" class="move-icon"> and computer <img src="${computerMove}-emoji.png" alt="Paper" class="move-icon">`;
 
 
         localStorage.setItem('scores', JSON.stringify(scores));
